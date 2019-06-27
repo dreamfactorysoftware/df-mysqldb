@@ -1,0 +1,37 @@
+{
+  "name":        "dreamfactory/df-mysqldb",
+  "description": "The DreamFactory(tm) MySQL DB Service.",
+  "keywords":    [
+    "dreamfactory",
+    "api",
+    "rest",
+    "mysql",
+    "db"
+  ],
+  "homepage":    "https://www.dreamfactory.com/",
+  "license":     "Apache-2.0",
+  "support":     {
+    "email":  "dspsupport@dreamfactory.com",
+    "source": "https://github.com/dreamfactorysoftware/df-mysqldb",
+    "issues": "https://github.com/dreamfactorysoftware/df-mysqldb/issues",
+    "wiki":   "https://wiki.dreamfactory.com"
+  },
+  "require":     {
+    "dreamfactory/df-sqldb": "~0.15.2"
+  },
+  "autoload":    {
+    "psr-4": {
+      "DreamFactory\\Core\\MySqlDb\\": "src/"
+    }
+  },
+  "extra":       {
+    "branch-alias": {
+      "dev-develop": "0.1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "DreamFactory\\Core\\MySqlDb\\ServiceProvider"
+      ]
+    }
+  }
+}

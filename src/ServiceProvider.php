@@ -29,8 +29,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                     'label'                 => 'MySQL',
                     'description'           => 'Database service supporting MySQL connections.',
                     'group'                 => ServiceTypeGroups::DATABASE,
-                    'config_handler'        => MySqlDbConfig::class,
                     'subscription_required' => LicenseLevel::SILVER,
+                    'config_handler'        => MySqlDbConfig::class,
                     'factory'               => function ($config) {
                         return new MySqlDb($config);
                     },

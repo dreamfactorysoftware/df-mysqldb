@@ -1,7 +1,6 @@
 <?php
 namespace DreamFactory\Core\MySqlDb;
 
-use DreamFactory\Core\MySqlDb\Database\Schema\MySqlSchema;
 use DreamFactory\Core\MySqlDb\Models\MySqlDbConfig;
 use DreamFactory\Core\MySqlDb\Services\MySqlDb;
 use DreamFactory\Core\Components\DbSchemaExtensions;

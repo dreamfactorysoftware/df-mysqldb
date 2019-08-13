@@ -1,5 +1,4 @@
 # df-mysqldb
 DreamFactory MySQL Database Service
 
-This is a service library for the DreamFactory platform containing a MySQL database service and resources.
-This is an add on to the DreamFactory Core library.
+This code is governed by a commercial license. To use it, you must follow refer to the LICENSE file.

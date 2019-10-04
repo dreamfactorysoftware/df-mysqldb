@@ -16,7 +16,10 @@
     "issues": "https://github.com/dreamfactorysoftware/df-mysqldb/issues",
     "wiki":   "https://wiki.dreamfactory.com"
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require":     {
+    "dreamfactory/df-core": "~0.15.2"
   },
   "autoload":    {
     "psr-4": {

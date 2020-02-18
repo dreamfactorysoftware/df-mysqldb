@@ -28,6 +28,19 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                     },
                 ])
             );
+            $df->addType(
+                new ServiceType([
+                    'name'                  => 'mariadb',
+                    'label'                 => 'MariaDB',
+                    'description'           => 'Database service supporting MariaDB connections.',
+                    'group'                 => ServiceTypeGroups::DATABASE,
+                    'subscription_required' => LicenseLevel::SILVER,
+                    'config_handler'        => MySqlDbConfig::class,
+                    'factory'               => function ($config) {
+                        return new MySqlDb($config);
+                    },
+                ])
+            );
         });
     }
 

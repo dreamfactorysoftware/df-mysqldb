@@ -21,7 +21,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                     'label'                 => 'MySQL',
                     'description'           => 'Database service supporting MySQL connections.',
                     'group'                 => ServiceTypeGroups::DATABASE,
-                    'subscription_required' => LicenseLevel::SILVER,
                     'config_handler'        => MySqlDbConfig::class,
                     'factory'               => function ($config) {
                         return new MySqlDb($config);
@@ -34,7 +33,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
                     'label'                 => 'MariaDB',
                     'description'           => 'Database service supporting MariaDB connections.',
                     'group'                 => ServiceTypeGroups::DATABASE,
-                    'subscription_required' => LicenseLevel::SILVER,
                     'config_handler'        => MySqlDbConfig::class,
                     'factory'               => function ($config) {
                         return new MySqlDb($config);
